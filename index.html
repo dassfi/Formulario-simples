@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      .container {
+        margin: 168px -46px 19px 416px;
+        background-color: #00000052;
+        width: 500px;
+        height: 300px;
+        border-radius: 50px;
+        text-align: center;
+      }
+      .displayblock {
+        display: block;
+      }
+      .inputs {
+        background: gray;
+        border: transparent 0px;
+        border-radius: 5px;
+        height: 26px;
+        width: 421px;
+        color: white;
+        margin: 21px 16px 12px 31px;
+        text-align: center;
+      }
+      .botaoSalvar {
+        margin: 20px 16px 12px 195px;
+        height: 35px;
+        width: 110px;
+        background: gray;
+        border: transparent 0px;
+        color: white;
+        border-radius: 10px;
+      }
+      .pessoas {
+        color: white;
+      }
+      .inputs::placeholder {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: white">Formulário</h1>
+      <input type="text" placeholder="Nome" class="nome displayblock inputs" />
+      <input
+        type="number"
+        placeholder="Idade"
+        class="idade displayblock inputs"
+      />
+      <p class="pessoas">
+        <input
+          type="radio"
+          value="pf"
+          class="inputRadio"
+          name="inputradio"
+        />Pessoa física
+      </p>
+      <p class="pessoas">
+        <input
+          type="radio"
+          value="pj"
+          class="inputRadio"
+          name="inputradio"
+        />Pessoa jurídica
+      </p>
+      <button type="button" class="botaoSalvar displayblock">Salvar</button>
+    </div>
+  </body>
+  <script src="javascript.js"></script>
+</html>
